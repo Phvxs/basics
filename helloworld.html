@@ -6,8 +6,13 @@
   <p>Before the script...</p>
 
   <script>
-    let name = prompt("Whats your name?", []);
-    alert(`You're name ist ${name}`);
+    let value = prompt('Whats the official Name of Javascript?', '');
+    if (value == "ECMAScript"){
+        alert("Right");
+    } else{
+        alert("You dont know? EMAScript!");
+    }
+    
   </script>
 
   <p>...After the script.</p>
