@@ -1,0 +1,10 @@
+# Ignoriere alle .log-Dateien
+*.log
+
+# Ignoriere den Ordner "node_modules"
+node_modules/
+
+# Ignoriere VSCode-Dateien
+.vscode/
+
+basics/
