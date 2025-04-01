@@ -6,16 +6,18 @@
   <p>Before the script...</p>
 
   <script>
-   let n = 10;
+    let a = +prompt('a?', '');
 
-for (let i = 2; i <= n; i++) { // for each i...
-
-  for (let j = 2; j < i; j++) { // look for a divisor..
-    if (i % j == 0) continue nextPrime; // not a prime, go next i
-  }
-
-  alert( i ); // a prime
-}
+    switch (a){
+      case 0: alert(0);
+      break;
+      case 1: alert(1);
+      break;
+      case 2:
+        case 3: 
+        alert('2,3');
+        break:
+    }
   </script>
 
   <p>...After the script.</p>
