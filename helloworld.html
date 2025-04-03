@@ -6,20 +6,11 @@
   <p>Before the script...</p>
 
   <script>
-    let a = +prompt('a?', '');
-
-    switch (a){
-      case 0: 
-      alert(0);
-      break;
-      case 1: 
-      alert(1);
-      break;
-      case 2:
-        case 3: 
-        alert('2,3');
-        break;
+    function checkAge(age){
+      return age > 18 ? true : confirm('Did parents allow you?');
     }
+
+    checkAge(23);
   </script>
 
   <p>...After the script.</p>
