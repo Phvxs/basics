@@ -6,17 +6,17 @@
   <p>Before the script...</p>
 
   <script>
-    function pow(x,n){
-      let result = 1;
-      for (let i = 0; i < n; i++ ){
-        result *=  x;
-         
+   function ask(question, yes, no){
+    if (confirm(question)) yes();
+    else no();
+   }
 
-      }
-      return result; 
-    }
+   ask("Do you agree", 
+    () => alert("You agreed"),
+    () => alert("You canceled the execution")
+   );
 
-    alert(pow(3,3));
+
   </script>
 
   <p>...After the script.</p>
