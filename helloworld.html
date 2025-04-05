@@ -6,17 +6,9 @@
   <p>Before the script...</p>
 
   <script>
-   function ask(question, yes, no){
-    if (confirm(question)) yes();
-    else no();
-   }
-
-   ask("Do you agree", 
-    () => alert("You agreed"),
-    () => alert("You canceled the execution")
-   );
-
-
+    for( let i=10; i>0; i-- ){
+      alert(i);
+    }
   </script>
 
   <p>...After the script.</p>
