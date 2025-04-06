@@ -6,13 +6,12 @@
   <p>Before the script...</p>
 
   <script>
-    let user = {};
-    user["name"] = "John";
-    user.surname = "Smith";
-    user.name = "Pete";
-    console.log(user);
-    delte user.name;
-    console.log(user);
+    function isEmpty(obj){
+      let keys = Object.keys(obj);
+      return keys.length === 0;
+      // return Object.keys(obj).length === 0;
+
+    };
 
   </script>
 
