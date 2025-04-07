@@ -6,21 +6,26 @@
   <p>Before the script...</p>
 
   <script>
-    let menu = {
-      width: 200,
-      height: 300,
-      title: "My menu"
+    let calculator = {
+      read: function(){
+        this.a= prompt('Gib bitte 1  Zahl ein', ' ');
+        this.b= prompt('Gib bitte 1  Zahl ein', ' ');
+      };
+
+      sum: function(){
+        return this.a + this.b; 
+      };
+
+      mul: function(){
+        return this.a * this.b;
+      };
+       
 };
 
-    function multiplyNumeric(menu){
-      for(let i in menu){
-        if (typeof menu[i] === "number"){
-        menu[i] = menu[i]*2;
-      }}
-    }
-
-    multiplayNumeric(menu);
-    console.log(menu);
+calculator.read();
+alert( calculator.sum() );
+alert( calculator.mul() );
+    
   </script>
 
   <p>...After the script.</p>
