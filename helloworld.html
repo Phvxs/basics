@@ -6,21 +6,21 @@
   <p>Before the script...</p>
 
   <script>
+    let menu = {
+      width: 200,
+      height: 300,
+      title: "My menu"
+};
 
-    let sum = 0;
-   let salaries = {
-    John: 100,
-    Ann: 160,
-    Pete: 130
-   }
-   
-   for (let i in salaries){
-    sum += salaries[i];
-    
+    function multiplyNumeric(menu){
+      for(let i in menu){
+        if (typeof menu[i] === "number"){
+        menu[i] = menu[i]*2;
+      }}
+    }
 
-   }
-   alert(sum);
-
+    multiplayNumeric(menu);
+    console.log(menu);
   </script>
 
   <p>...After the script.</p>
