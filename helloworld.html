@@ -6,26 +6,23 @@
   <p>Before the script...</p>
 
   <script>
-   function Calculator(){
-    this.read = function() {
-      this.a = +prompt("Gib die erste Zahl ein", '');
-      this.b = +prompt("Gib die Zweite Zahl ein", '');
-    };
+    let sum = 0;
+  let expenses = {
+    rent: 700,
+    groceries:250,
+    entertainment: 120,
+    misc:60,
+  };
 
-    this.sum = function(){
-      return this.a + this.b;
-    };
+  for(let key in expenses){
+    sum += expenses[key];
 
-    this.mul = function() {
-      return this.a * this.b;
+    if(expenses[key]<100){
+      delete expenses[key];
     }
+  }
 
-   }
-
-   let calculator = new Calculator(); // Erstelle neues Objekt mit dem Bauplan
-calculator.read();                 // Frage zwei Zahlen ab
-alert("Summe: " + calculator.sum());  // Zeige die Summe an
-alert("Produkt: " + calculator.mul()); // Zeige das Produkt an
+  
 
 
   </script>
