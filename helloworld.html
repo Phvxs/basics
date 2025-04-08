@@ -6,17 +6,20 @@
   <p>Before the script...</p>
 
   <script>
-    let words = {
-      word1: "apple",
-      word2: "banana",
-      word3: "cherry"
-    };
-    for(key in words){
-      words[key]=words[key].toUpperCase();
-      alert(words[key]);
-    }
+    let count = 0;
+    let people = {
+      tom: { age: 20 },
+      anna: { age: 17 },
+      max: { age: 25 }
+      };
 
+      for(let key in people){
+        if(people[key].age>= 18){
+          count += 1;
+          alert(count);
+        }
 
+      }
 
  
   </script>
