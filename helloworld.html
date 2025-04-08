@@ -6,18 +6,19 @@
   <p>Before the script...</p>
 
   <script>
-    let scores = {
-  Alice: 87,
-  Bob: 95,
-  Eve: 42,
-  Carol: 100
-};
-for(let key in scores){
-  if (scores[key]>90){
-    alert([key]);
-  }
-}
-   
+    let words = {
+      word1: "apple",
+      word2: "banana",
+      word3: "cherry"
+    };
+    for(key in words){
+      words[key]=words[key].toUpperCase();
+      alert(words[key]);
+    }
+
+
+
+ 
   </script>
 
   <p>...After the script.</p>
