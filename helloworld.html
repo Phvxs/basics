@@ -6,19 +6,20 @@
   <p>Before the script...</p>
 
   <script>
-    let store= [];
-   let scores = {
-      John: 100,
-      Alice: 85,
-      Bob: 92,
-      Carol: 78
+   let people = {
+    John: "apple",
+    Alice: "banana",
+    Bob: "cherry"
     };
 
-    for(key in scores){
-      store.push(scores[key]);
-      alert(Math.max(...store));
+    let neupeople = {};
+
+    for(key in people){
+      neupeople[key] = ["Banane", "Apfel", "Birne"]
+
     }
 
+    
  
   </script>
 
