@@ -7,22 +7,17 @@
 
   <script>
     let sum = 0;
-  let expenses = {
-    rent: 700,
-    groceries:250,
-    entertainment: 120,
-    misc:60,
-  };
-
-  for(let key in expenses){
-    sum += expenses[key];
-
-    if(expenses[key]<100){
-      delete expenses[key];
+    let prices = {
+      appel: 1.5,
+      banana: 1.2,
+      mango: 2.5,
+      grape: 0.8
     }
-  }
 
-  
+    for(let key in prices){
+      prices[key] = prices[key] / 100 * 10 + prices[key];
+
+    }
 
 
   </script>
