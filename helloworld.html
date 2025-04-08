@@ -6,20 +6,18 @@
   <p>Before the script...</p>
 
   <script>
-    let sum = 0;
-    let prices = {
-      appel: 1.5,
-      banana: 1.2,
-      mango: 2.5,
-      grape: 0.8
-    }
-
-    for(let key in prices){
-      prices[key] = prices[key] / 100 * 10 + prices[key];
-
-    }
-
-
+    let scores = {
+  Alice: 87,
+  Bob: 95,
+  Eve: 42,
+  Carol: 100
+};
+for(let key in scores){
+  if (scores[key]>90){
+    alert([key]);
+  }
+}
+   
   </script>
 
   <p>...After the script.</p>
