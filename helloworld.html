@@ -6,36 +6,26 @@
   <p>Before the script...</p>
 
   <script>
-    // There’s a ladder object that allows you to go up and down:
+   function Calculator(){
+    this.read = function() {
+      this.a = +prompt("Gib die erste Zahl ein", '');
+      this.b = +prompt("Gib die Zweite Zahl ein", '');
+    };
 
-      let ladder = {
-        step: 0,
-        up() {
-          this.step++;
-          return this;
-       },
-        down() {
-          this.step--;
-          return this;
-        },
-        showStep: function() { // shows the current step
-          alert( this.step );
-          return this;
-  }
-};
-// Now, if we need to make several calls in sequence, we can do it like this:
-/* 
-ladder.up();
-ladder.up();
-ladder.down();
-ladder.showStep(); // 1
-ladder.down();
-ladder.showStep(); // 0
-Modify the code of up, down, and showStep to make the calls chainable, like this:
+    this.sum = function(){
+      return this.a + this.b;
+    };
 
-ladder.up().up().down().showStep().down().showStep(); // shows 1 then 0
+    this.mul = function() {
+      return this.a * this.b;
+    }
 
-*/
+   }
+
+   let calculator = new Calculator(); // Erstelle neues Objekt mit dem Bauplan
+calculator.read();                 // Frage zwei Zahlen ab
+alert("Summe: " + calculator.sum());  // Zeige die Summe an
+alert("Produkt: " + calculator.mul()); // Zeige das Produkt an
 
 
   </script>
