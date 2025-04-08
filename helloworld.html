@@ -6,15 +6,17 @@
   <p>Before the script...</p>
 
   <script>
-   let prices = {
-      apple: 2,
-      banana: 1.5,
-      mango: 3
-      };
+    let store= [];
+   let scores = {
+      John: 100,
+      Alice: 85,
+      Bob: 92,
+      Carol: 78
+    };
 
-    for(key in prices){
-      prices[key] = prices[key] * 1.2;
-      alert(prices[key]);
+    for(key in scores){
+      store.push(scores[key]);
+      alert(Math.max(...store));
     }
 
  
