@@ -6,19 +6,16 @@
   <p>Before the script...</p>
 
   <script>
-    let inventory = {
-      apples: 120,
-      bananas: 200,
-      cherries: 150,
-      mangoes: 80
+   let prices = {
+      apple: 2,
+      banana: 1.5,
+      mango: 3
       };
 
-      for(key in inventory){
-        if(inventory[key]< 100){
-          alert(inventory[key]);
-          delete inventory[key];
-        }
-      }
+    for(key in prices){
+      prices[key] = prices[key] * 1.2;
+      alert(prices[key]);
+    }
 
  
   </script>
