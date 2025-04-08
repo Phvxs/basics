@@ -6,19 +6,18 @@
   <p>Before the script...</p>
 
   <script>
-    let count = 0;
-    let people = {
-      tom: { age: 20 },
-      anna: { age: 17 },
-      max: { age: 25 }
+    let inventory = {
+      apples: 120,
+      bananas: 200,
+      cherries: 150,
+      mangoes: 80
       };
 
-      for(let key in people){
-        if(people[key].age>= 18){
-          count += 1;
-          alert(count);
+      for(key in inventory){
+        if(inventory[key]< 100){
+          alert(inventory[key]);
+          delete inventory[key];
         }
-
       }
 
  
