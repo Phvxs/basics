@@ -6,21 +6,27 @@
   <p>Before the script...</p>
 
   <script>
-    let people = [
-      { name: "John", age: 25 },
-      { name: "Alice", age: 30 },
-      { name: "Bob", age: 27 }
-        ];
+    let count = 0;
+    let zahl = 0;
+   let things = [
+    { name: "Apple", type: "fruit", value: 10 },
+    { name: "Banana", type: "fruit", value: 5 },
+    { name: "Laptop", type: "tech", value: 800 },
+    { name: "Pear", type: "fruit", value: 6 },
+    { name: "Headphones", type: "tech", value: 150 }
+      ];
 
-        for( irg of people){
-          if(irg.name == "Alice"){
-            alert("Alice");
-          }
+      for( ident of things){
+        if(ident.type == "fruit"){
+          count += 1;
+          zahl = zahl + ident.value;
         }
+           
 
-  
+      }
 
-    
+      alert(count);
+      alert(zahl);
  
   </script>
 
