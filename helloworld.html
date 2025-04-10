@@ -8,18 +8,25 @@
   <script>
    let counter = {
     count: 0,
-    increase: function (){
-      this.count += 1;
+    increase: function (add = 1){
+      this.count += add;
     },
 
-    decrease: function (){
-      this.count -= 1;
+    decrease: function (min = 1 ){
+      this.count -= min;
     },
 
     show: function(){
       alert(this.count);
     },
    }
+
+   counter.increase(7);
+   counter.show();
+   counter.decrease(3);
+   counter.show();
+   counter.increase(12);
+   counter.show();
 
 
  
