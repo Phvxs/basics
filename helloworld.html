@@ -6,27 +6,22 @@
   <p>Before the script...</p>
 
   <script>
-    let count = 0;
-    let zahl = 0;
-   let things = [
-    { name: "Apple", type: "fruit", value: 10 },
-    { name: "Banana", type: "fruit", value: 5 },
-    { name: "Laptop", type: "tech", value: 800 },
-    { name: "Pear", type: "fruit", value: 6 },
-    { name: "Headphones", type: "tech", value: 150 }
-      ];
+   let counter = {
+    count: 0,
+    increase: function (){
+      this.count += 1;
+    },
 
-      for( ident of things){
-        if(ident.type == "fruit"){
-          count += 1;
-          zahl = zahl + ident.value;
-        }
-           
+    decrease: function (){
+      this.count -= 1;
+    },
 
-      }
+    show: function(){
+      alert(this.count);
+    },
+   }
 
-      alert(count);
-      alert(zahl);
+
  
   </script>
 
