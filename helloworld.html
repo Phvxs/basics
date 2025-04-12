@@ -6,27 +6,19 @@
   <p>Before the script...</p>
 
   <script>
-   let counter = {
-    count: 0,
-    increase: function (add = 1){
-      this.count += add;
-    },
+   function Person(name, age) {
+    this.name = name;
+    this.age = age;
+    this.sayHello = function() {
+      alert(`Hi, ich bin ${this.name} und ${this.age} Jahre alt.`);
+    };
+  }
 
-    decrease: function (min = 1 ){
-      this.count -= min;
-    },
+    const p1 = new Person("Anna", 28);
+    const p2 = new Person("Ben", 35);
 
-    show: function(){
-      alert(this.count);
-    },
-   }
-
-   counter.increase(7);
-   counter.show();
-   counter.decrease(3);
-   counter.show();
-   counter.increase(12);
-   counter.show();
+    p1.sayHello(); // Hi, ich bin Anna und 28 Jahre alt.
+    p1.sayHello(Julia, 30);
 
 
  
