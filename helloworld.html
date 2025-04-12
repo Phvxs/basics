@@ -6,13 +6,16 @@
   <p>Before the script...</p>
 
   <script>
-   let numbers = [5, 12, 9, 21, 3];
-   let max = Math.max(...numbers);
-   let sorts = [...numbers].sort((a, b) => a - b);
+   let categories = {
+    fruits: ["apple", "banana"],
+    tech: ["laptop", "tablet"],
+    books: ["novel", "dictionary"]
+    };
 
-   alert(numbers);
-   alert(max);
-   alert(sorts);
+    categories.fruits.push("pear");
+    categories.tech.splice(1);
+    alert(categories.fruits);
+    alert(categories.tech);
 
 
  
