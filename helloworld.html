@@ -6,19 +6,13 @@
   <p>Before the script...</p>
 
   <script>
-   function Person(name, age) {
-    this.name = name;
-    this.age = age;
-    this.sayHello = function() {
-      alert(`Hi, ich bin ${this.name} und ${this.age} Jahre alt.`);
-    };
-  }
+   let numbers = [5, 12, 9, 21, 3];
+   let max = Math.max(...numbers);
+   let sorts = [...numbers].sort((a, b) => a - b);
 
-    const p1 = new Person("Anna", 28);
-    const p2 = new Person("Ben", 35);
-
-    p1.sayHello(); // Hi, ich bin Anna und 28 Jahre alt.
-    p1.sayHello(Julia, 30);
+   alert(numbers);
+   alert(max);
+   alert(sorts);
 
 
  
